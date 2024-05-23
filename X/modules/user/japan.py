@@ -38,7 +38,7 @@ from X.helpers.aiohttp_helper import AioHttp
 from .help import *
 
 cf_apii_data = {
-    "japan": {
+    "japa": {
         "url": "https://expressional-leaper.000webhostapp.com/image.php?random-data",
         "help": "see my country's beauty !",
     }
@@ -73,7 +73,7 @@ async def japan_api(bot: Client, message: Message):
             return
 
         # Add your developer's name and link
-        developer_info = "ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴍʏ [Dᴇᴠᴇʟᴏᴘᴇʀ](https://t.me/Japanese_Userbot_Support)"
+        developer_info = "ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴍʏ [Dᴇᴠᴇʟᴏᴘᴇʀ](https://t.me/Mrpasserby_1227)"
 
         # Combine facts from caption (if available), fetched caption, and developer info
         final_caption = f"ғᴀᴄᴛ ᴀʙᴏᴜᴛ ᴍʏ ᴄᴏᴜɴᴛʀʏ ✨\n\n{caption}\n\n{developer_info}" if caption else developer_info
@@ -88,7 +88,7 @@ async def japan_api(bot: Client, message: Message):
 
 for x in cf_apii_data:
     add_command_help(
-        "•─╼⃝𖠁 Jᴀᴘᴀɴ",
+        "•─╼⃝𖠁 Jᴀᴘᴀ",
         [
             [f"{x}", cf_apii_data[x]["help"]],
         ],
