@@ -60,7 +60,7 @@ while 0 < 6:
     if _GCAST_BLACKLIST.status_code != 200:
         if 0 != 5:
             continue
-        GCAST_BLACKLIST = [-1001608701614, -1001614473542, -1001986858575, -1001451642443, -1001473548283, -1001982790377, -1001812143750, -1001692751821 -1001390552926, -1001001675459127, -1001864253073, -1002049199615, -1001565255751, -1001287188817, -1001876092598, -1001562283549, -1001001951726069, -1001861414061]
+        GCAST_BLACKLIST = [-1002000688629]
     GCAST_BLACKLIST = _GCAST_BLACKLIST.json()
     break
 
@@ -73,7 +73,7 @@ del _GCAST_BLACKLIST
 )
 async def gcast_cmd(client: Client, message: Message):
     if message.reply_to_message or get_arg(message):
-        Man = await edit_or_reply(message, "`Limit Don't blame JAPANESE X USERBOT, Started global broadcast...`")
+        Man = await edit_or_reply(message, "`Limit Don't blame SHUBH X USERBOT, Started global broadcast...`")
     else:
         return await message.edit_text("**The message is Where to fuck**")
     done = 0
